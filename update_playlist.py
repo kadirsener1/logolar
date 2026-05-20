@@ -10,59 +10,74 @@ OUTPUT_FILE = "playlist.m3u"
 PROXY_BASE = "https://vavooproxy.magnitude.workers.dev/resolve?url="
 
 # ===================== KANAL LİSTESİ =====================
-# Her kanala şunları yaz:
-#   "name"     : Kanal adı
-#   "group"    : Grup adı (Spor, Haber, Sinema, vb.)
-#   "logo"     : Logo URL'si (boş bırakabilirsin "")
-#   "tvg_id"   : EPG ID (boş bırakabilirsin "")
-#   "url"      : Vavoo orijinal linki
+# "urls" → Liste olarak birden fazla URL yazabilirsin
+#           İlk çalışan kullanılır, başarısız olursa sonrakine geçer
 # ==========================================================
 
 CHANNELS = [
-     {
+    {
         "name": "beIN Sports 1 HD",
         "group": "Spor",
-        "logo": "https://raw.githubusercontent.com/kadirsener1/logolar/refs/heads/master/kanallogolari/beIN-SPORTS-1-HD.png",
+        "logo": "https://raw.githubusercontent.com/kadirsener1/logolar/master/logos/bein1.png",
         "tvg_id": "beinsports1.tr",
-        "url": "https://vavoo.to/vavoo-iptv/play/300113394ceebba66c8ad"
+        "urls": [
+            "https://vavoo.to/vavoo-iptv/play/300113394ceebba66c8a",
+            "https://vavoo.to/vavoo-iptv/play/38404756531618c87fcc66",
+            "https://vavoo.to/vavoo-iptv/play/22330664333ebb4acbb6ab"
+        ]
     },
     {
         "name": "beIN Sports 2 HD",
         "group": "Spor",
         "logo": "https://raw.githubusercontent.com/kadirsener1/logolar/master/logos/bein2.png",
         "tvg_id": "beinsports2.tr",
-        "url": "https://vavoo.to/vavoo-iptv/play/28515391437e928cafd5dd"
+        "urls": [
+            "https://vavoo.to/vavoo-iptv/play/BIRINCI_ID",
+            "https://vavoo.to/vavoo-iptv/play/IKINCI_ID"
+        ]
     },
     {
         "name": "TRT 1 HD",
         "group": "Ulusal",
         "logo": "https://raw.githubusercontent.com/kadirsener1/logolar/master/logos/trt1.png",
         "tvg_id": "trt1.tr",
-        "url": "https://vavoo.to/vavoo-iptv/play/762199258e25181300f62"
+        "urls": [
+            "https://vavoo.to/vavoo-iptv/play/TRT1_ID_1",
+            "https://vavoo.to/vavoo-iptv/play/TRT1_ID_2"
+        ]
     },
     {
         "name": "Show TV",
         "group": "Ulusal",
         "logo": "https://raw.githubusercontent.com/kadirsener1/logolar/master/logos/showtv.png",
         "tvg_id": "showtv.tr",
-        "url": "https://vavoo.to/vavoo-iptv/play/33174058547853caa0e516"
+        "urls": [
+            "https://vavoo.to/vavoo-iptv/play/SHOW_ID_1"
+        ]
     },
     {
         "name": "CNN Türk",
         "group": "Haber",
         "logo": "https://raw.githubusercontent.com/kadirsener1/logolar/master/logos/cnnturk.png",
         "tvg_id": "cnnturk.tr",
-        "url": "https://vavoo.to/vavoo-iptv/play/2056768647bd7eb3f3cf70"
+        "urls": [
+            "https://vavoo.to/vavoo-iptv/play/CNN_ID_1",
+            "https://vavoo.to/vavoo-iptv/play/CNN_ID_2",
+            "https://vavoo.to/vavoo-iptv/play/CNN_ID_3"
+        ]
     },
     # ========================================================
-    # DAHA FAZLA KANAL EKLEMEK İÇİN AŞAĞIYA KOPYALA YAPIŞTIR:
+    # YENİ KANAL EKLEMEK İÇİN:
     # ========================================================
     # {
     #     "name": "Kanal Adı",
-    #     "group": "Grup Adı",
-    #     "logo": "https://logo-linki.png",
+    #     "group": "Grup",
+    #     "logo": "https://logo.png",
     #     "tvg_id": "epg.id",
-    #     "url": "https://vavoo.to/vavoo-iptv/play/KANAL_ID"
+    #     "urls": [
+    #         "https://vavoo.to/vavoo-iptv/play/ANA_ID",
+    #         "https://vavoo.to/vavoo-iptv/play/YEDEK_ID"
+    #     ]
     # },
 ]
 
@@ -97,7 +112,7 @@ def extract_url_from_json(data, base_url):
     return None
 
 
-def resolve_channel(vavoo_url):
+def resolve_single_url(vavoo_url):
     resolve_url = PROXY_BASE + vavoo_url
 
     headers = {
@@ -155,6 +170,26 @@ def resolve_channel(vavoo_url):
     return None
 
 
+def resolve_channel(url_list):
+    """
+    Birden fazla URL dener.
+    İlk başarılı olanı döndürür.
+    Hepsi başarısız olursa None döner.
+    """
+    for idx, vavoo_url in enumerate(url_list, 1):
+        try:
+            print(f"    URL {idx}/{len(url_list)} deneniyor...")
+            result = resolve_single_url(vavoo_url)
+            if result:
+                return result
+            else:
+                print(f"    URL {idx}: Link çözülemedi, sonraki deneniyor...")
+        except Exception as e:
+            print(f"    URL {idx}: Hata → {str(e)[:80]}, sonraki deneniyor...")
+
+    return None
+
+
 def main():
     print(f"[{datetime.now()}] Playlist güncelleniyor...")
     print(f"Toplam {len(CHANNELS)} kanal işlenecek.\n")
@@ -168,25 +203,33 @@ def main():
         group = ch.get("group", "Genel")
         logo = ch.get("logo", "")
         tvg_id = ch.get("tvg_id", "")
-        vavoo_url = ch["url"]
 
-        print(f"[{i}/{len(CHANNELS)}] {name} çözülüyor...")
+        # Eski "url" formatını da destekle (tek URL string)
+        if "urls" in ch:
+            url_list = ch["urls"]
+        elif "url" in ch:
+            url_list = [ch["url"]]
+        else:
+            print(f"[{i}/{len(CHANNELS)}] {name}: URL tanımlı değil, atlanıyor.")
+            failed += 1
+            continue
 
-        try:
-            m3u8_url = resolve_channel(vavoo_url)
+        print(f"[{i}/{len(CHANNELS)}] {name} çözülüyor ({len(url_list)} URL mevcut)...")
 
-            if m3u8_url:
-                extinf = f'#EXTINF:-1 tvg-id="{tvg_id}" tvg-logo="{logo}" group-title="{group}",{name}'
-                lines.append(extinf)
-                lines.append(m3u8_url)
-                print(f"  ✅ Başarılı: {m3u8_url[:80]}...")
-                success += 1
-            else:
-                print(f"  ❌ Link bulunamadı, atlanıyor.")
-                failed += 1
+        m3u8_url = resolve_channel(url_list)
 
-        except Exception as e:
-            print(f"  ❌ Hata: {str(e)[:100]}")
+        if m3u8_url:
+            extinf = (
+                f'#EXTINF:-1 tvg-id="{tvg_id}" '
+                f'tvg-logo="{logo}" '
+                f'group-title="{group}",{name}'
+            )
+            lines.append(extinf)
+            lines.append(m3u8_url)
+            print(f"  ✅ {name}: {m3u8_url[:80]}...")
+            success += 1
+        else:
+            print(f"  ❌ {name}: Tüm URL'ler başarısız, atlanıyor.")
             failed += 1
 
     # M3U dosyasını yaz
