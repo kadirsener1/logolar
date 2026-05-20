@@ -7,7 +7,7 @@ from urllib.parse import urljoin, urlparse
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
 OUTPUT_FILE = "playlist.m3u"
-PROXY_BASE = ""
+PROXY_BASE = "https://vavooproxy.magnitude.workers.dev/resolve?url="
 
 # ===================== KANAL LİSTESİ =====================
 # Her kanala şunları yaz:
@@ -24,35 +24,35 @@ CHANNELS = [
         "group": "Spor",
         "logo": "https://raw.githubusercontent.com/kadirsener1/logolar/refs/heads/master/kanallogolari/beIN-SPORTS-1-HD.png",
         "tvg_id": "beinsports1.tr",
-        "url": "https://vavooproxy.magnitude.workers.dev/resolve?url=https://vavoo.to/vavoo-iptv/play/300113394ceebba66c8ad"
+        "url": "https://vavoo.to/vavoo-iptv/play/300113394ceebba66c8ad"
     },
     {
         "name": "beIN Sports 2 HD",
         "group": "Spor",
         "logo": "https://raw.githubusercontent.com/kadirsener1/logolar/master/logos/bein2.png",
         "tvg_id": "beinsports2.tr",
-        "url": "https://vavooproxy.magnitude.workers.dev/resolve?url=https://vavoo.to/vavoo-iptv/play/28515391437e928cafd5dd"
+        "url": "https://vavoo.to/vavoo-iptv/play/28515391437e928cafd5dd"
     },
     {
         "name": "TRT 1 HD",
         "group": "Ulusal",
         "logo": "https://raw.githubusercontent.com/kadirsener1/logolar/master/logos/trt1.png",
         "tvg_id": "trt1.tr",
-        "url": "https://vavooproxy.magnitude.workers.dev/resolve?url=https://vavoo.to/vavoo-iptv/play/762199258e25181300f62"
+        "url": "https://vavoo.to/vavoo-iptv/play/762199258e25181300f62"
     },
     {
         "name": "Show TV",
         "group": "Ulusal",
         "logo": "https://raw.githubusercontent.com/kadirsener1/logolar/master/logos/showtv.png",
         "tvg_id": "showtv.tr",
-        "url": "https://vavooproxy.magnitude.workers.dev/resolve?url=https://vavoo.to/vavoo-iptv/play/33174058547853caa0e516"
+        "url": "https://vavoo.to/vavoo-iptv/play/33174058547853caa0e516"
     },
     {
         "name": "CNN Türk",
         "group": "Haber",
         "logo": "https://raw.githubusercontent.com/kadirsener1/logolar/master/logos/cnnturk.png",
         "tvg_id": "cnnturk.tr",
-        "url": "https://vavooproxy.magnitude.workers.dev/resolve?url=https://vavoo.to/vavoo-iptv/play/2056768647bd7eb3f3cf70"
+        "url": "https://vavoo.to/vavoo-iptv/play/2056768647bd7eb3f3cf70"
     },
     # ========================================================
     # DAHA FAZLA KANAL EKLEMEK İÇİN AŞAĞIYA KOPYALA YAPIŞTIR:
