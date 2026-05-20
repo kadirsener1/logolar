@@ -21,8 +21,24 @@ CHANNELS = [
         "logo": "https://raw.githubusercontent.com/kadirsener1/logolar/master/logos/bein1.png",
         "tvg_id": "beinsports1.tr",
         "urls": [
-            "https://vavoo.to/vavoo-iptv/play/1363827223a1c98515d61",
-            "https://vavoo.to/vavoo-iptv/play/3692337241ec1b0872b06e",
+            "https://vavoo.to/vavoo-iptv/play/1363827223a1c98515d61"
+        ]
+    },
+       {
+        "name": "beIN 1 HD",
+        "group": "Spor",
+        "logo": "https://raw.githubusercontent.com/kadirsener1/logolar/master/logos/bein1.png",
+        "tvg_id": "beinsports1.tr",
+        "urls": [
+            "https://vavoo.to/vavoo-iptv/play/3692337241ec1b0872b06e"
+        ]
+    },
+       {
+        "name": "beIN 1 HD",
+        "group": "Spor",
+        "logo": "https://raw.githubusercontent.com/kadirsener1/logolar/master/logos/bein1.png",
+        "tvg_id": "beinsports1.tr",
+        "urls": [
             "https://vavoo.to/vavoo-iptv/play/2919229346c4e9a95ddb3f"
         ]
     },
@@ -32,9 +48,36 @@ CHANNELS = [
         "logo": "https://raw.githubusercontent.com/kadirsener1/logolar/master/logos/bein2.png",
         "tvg_id": "beinsports2.tr",
         "urls": [
-            "https://vavoo.to/vavoo-iptv/play/300113394ceebba66c8ad",
-            "https://vavoo.to/vavoo-iptv/play/38404756531618c87fcc66",
-            "https://vavoo.to/vavoo-iptv/play/22330664333ebb4acbb6ab",
+            "https://vavoo.to/vavoo-iptv/play/300113394ceebba66c8ad"
+        ]
+    },
+      {
+        "name": "beIN Sports 1 HD",
+        "group": "Spor",
+        "logo": "https://raw.githubusercontent.com/kadirsener1/logolar/master/logos/bein2.png",
+        "tvg_id": "beinsports2.tr",
+        "urls": [
+            
+            "https://vavoo.to/vavoo-iptv/play/38404756531618c87fcc66"
+        ]
+    },
+      {
+        "name": "beIN Sports 1 HD",
+        "group": "Spor",
+        "logo": "https://raw.githubusercontent.com/kadirsener1/logolar/master/logos/bein2.png",
+        "tvg_id": "beinsports2.tr",
+        "urls": [
+           
+            "https://vavoo.to/vavoo-iptv/play/22330664333ebb4acbb6ab"
+        ]
+    },
+      {
+        "name": "beIN Sports 1 HD",
+        "group": "Spor",
+        "logo": "https://raw.githubusercontent.com/kadirsener1/logolar/master/logos/bein2.png",
+        "tvg_id": "beinsports2.tr",
+        "urls": [
+        
             "https://vavoo.to/vavoo-iptv/play/342898470360b159ef8301"
         ]
     },
@@ -44,10 +87,28 @@ CHANNELS = [
         "logo": "https://raw.githubusercontent.com/kadirsener1/logolar/master/logos/trt1.png",
         "tvg_id": "trt1.tr",
         "urls": [
-            "https://vavoo.to/vavoo-iptv/play/2576216897d1c2b14af4e9",
-            "https://vavoo.to/vavoo-iptv/play/13524210538e192d878d20",
+            "https://vavoo.to/vavoo-iptv/play/2576216897d1c2b14af4e9"
+        ] 
+    },
+     {
+        "name": "beIN Sports 1 HD (yedek)",
+        "group": "Spor",
+        "logo": "https://raw.githubusercontent.com/kadirsener1/logolar/master/logos/trt1.png",
+        "tvg_id": "trt1.tr",
+        "urls": [
+            
+            "https://vavoo.to/vavoo-iptv/play/13524210538e192d878d20"
+        ] 
+    },
+     {
+        "name": "beIN Sports 1 HD (yedek)",
+        "group": "Spor",
+        "logo": "https://raw.githubusercontent.com/kadirsener1/logolar/master/logos/trt1.png",
+        "tvg_id": "trt1.tr",
+        "urls": [
+
             "https://vavoo.to/vavoo-iptv/play/2729088606df69156b1eda"
-        ]
+        ] 
     },
     {
         "name": "beIN Sports 1 HD (yedek 2(",
@@ -55,8 +116,25 @@ CHANNELS = [
         "logo": "https://raw.githubusercontent.com/kadirsener1/logolar/master/logos/showtv.png",
         "tvg_id": "showtv.tr",
         "urls": [
-            "https://vavoo.to/vavoo-iptv/play/24034250314fd9aa349685",
-            "https://vavoo.to/vavoo-iptv/play/66217962033a2d3e9c47f",
+            "https://vavoo.to/vavoo-iptv/play/24034250314fd9aa349685"
+        ]
+    },
+        {
+        "name": "beIN Sports 1 HD (yedek 2(",
+        "group": "Spor",
+        "logo": "https://raw.githubusercontent.com/kadirsener1/logolar/master/logos/showtv.png",
+        "tvg_id": "showtv.tr",
+        "urls": [
+           
+            "https://vavoo.to/vavoo-iptv/play/66217962033a2d3e9c47f"
+        ]
+    },
+        {
+        "name": "beIN Sports 1 HD (yedek 2(",
+        "group": "Spor",
+        "logo": "https://raw.githubusercontent.com/kadirsener1/logolar/master/logos/showtv.png",
+        "tvg_id": "showtv.tr",
+        "urls": [
             "https://vavoo.to/vavoo-iptv/play/5934938605e361d7e0ff0"
         ]
     },
