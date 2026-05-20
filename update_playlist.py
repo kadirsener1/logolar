@@ -24,7 +24,7 @@ CHANNELS = [
         "group": "Spor",
         "logo": "https://raw.githubusercontent.com/kadirsener1/logolar/refs/heads/master/kanallogolari/beIN-SPORTS-1-HD.png",
         "tvg_id": "beinsports1.tr",
-        "url": "https://vavooproxy.magnitude.workers.dev/resolve?url=https://vavoo.to/vavoo-iptv/play/300113394ceebba66c8ad"
+        "url": "https://vavoo.to/vavoo-iptv/play/300113394ceebba66c8ad"
     },
     {
         "name": "beIN Sports 2 HD",
@@ -45,7 +45,7 @@ CHANNELS = [
         "group": "Ulusal",
         "logo": "https://raw.githubusercontent.com/kadirsener1/logolar/master/logos/showtv.png",
         "tvg_id": "showtv.tr",
-        "url": "https://vavoo.to/vavoo-iptv/play/144949986573359afbfeae"
+        "url": "https://vavoo.to/vavoo-iptv/play/33174058547853caa0e516"
     },
     {
         "name": "CNN Türk",
