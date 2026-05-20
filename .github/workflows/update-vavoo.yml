@@ -23,15 +23,13 @@ jobs:
           python-version: '3.11'
 
       - name: Install Dependencies
-        run: pip install requests urllib3
+        run: pip install requests
 
       - name: Run Update Script
-        env:
-          PYTHONWARNINGS: "ignore:Unverified HTTPS request"
         run: python update_playlist.py
 
       - name: Commit & Push Changes
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          commit_message: "Update Vavoo m3u8 link"
+          commit_message: "Update tokenized m3u8 link"
           file_pattern: playlist.m3u
