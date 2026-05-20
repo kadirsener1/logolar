@@ -31,21 +31,21 @@ CHANNELS = [
         "group": "Spor",
         "logo": "https://raw.githubusercontent.com/kadirsener1/logolar/master/logos/bein2.png",
         "tvg_id": "beinsports2.tr",
-        "url": "https://vavoo.to/vavoo-iptv/play/1447241506bdccfad8b85c"
+        "url": "https://vavoo.to/vavoo-iptv/play/28515391437e928cafd5dd"
     },
     {
         "name": "TRT 1 HD",
         "group": "Ulusal",
         "logo": "https://raw.githubusercontent.com/kadirsener1/logolar/master/logos/trt1.png",
         "tvg_id": "trt1.tr",
-        "url": "https://vavoo.to/vavoo-iptv/play/2041026135d10f9c36ff66"
+        "url": "https://vavoo.to/vavoo-iptv/play/762199258e25181300f62"
     },
     {
         "name": "Show TV",
         "group": "Ulusal",
         "logo": "https://raw.githubusercontent.com/kadirsener1/logolar/master/logos/showtv.png",
         "tvg_id": "showtv.tr",
-        "url": "https://vavoo.to/vavoo-iptv/play/8795889605c7795ac9528"
+        "url": "https://vavoo.to/vavoo-iptv/play/3537232978db7b25368a4b"
     },
     {
         "name": "CNN Türk",
