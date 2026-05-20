@@ -1,8 +1,8 @@
-name: Update Vavoo Playlist
+name: Update Playlist
 
 on:
   schedule:
-    - cron: '35 * * * *'
+    - cron: '15 * * * *'
   workflow_dispatch:
 
 permissions:
@@ -11,7 +11,7 @@ permissions:
 jobs:
   update:
     runs-on: ubuntu-22.04
-    timeout-minutes: 10
+    timeout-minutes: 5
 
     steps:
       - name: Checkout Repository
@@ -22,14 +22,11 @@ jobs:
         with:
           python-version: '3.11'
 
-      - name: Install Dependencies
-        run: pip install requests
-
       - name: Run Update Script
         run: python update_playlist.py
 
       - name: Commit & Push Changes
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          commit_message: "Update playlist - auto"
+          commit_message: "Update playlist automatically"
           file_pattern: playlist.m3u
