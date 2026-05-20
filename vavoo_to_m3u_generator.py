@@ -1,26 +1,66 @@
 import json
 import requests
-import sys
 
-def main():
-    print("[*] Vavoo IPTV M3U Playlist Generator")
-    target_url = "https://vavooproxy.magnitude.workers.dev/resolve?url=https://vavoo.to/vavoo-iptv/play/2485009235d60801ad626b"
-    output_filename = "vavoo_playlist.m3u"
+def fetch_vavoo_channels():
+    # Vavoo'nun güncel kanal listesini ve tokenları dağıttığı ana API uç noktaları
+    api_url = "https://www.vavoo.to/live2/index"
+    
+    # Vavoo sunucularının istekleri reddetmemesi için gerekli başlıklar ve user-agent
+    headers = {
+        "User-Agent": "VAVOO/2.6",
+        "Accept": "*/*",
+        "Content-Type": "application/json"
+    }
+    
+    # Sunucuya gönderilecek standart boş doğrulama gövdesi
+    payload = {"id": ""}
+    
+    print("[*] Vavoo API'sine bağlanılıyor ve güncel liste alınıyor...")
     
     try:
-        print(f"[*] Bağlantı test ediliyor: {target_url}")
-        headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64)'}
-        response = requests.get(target_url, headers=headers, timeout=10)
+        response = requests.post(api_url, data=json.dumps(payload), headers=headers, timeout=15)
+        response.raise_for_status()
         
-        # M3U İçeriğini oluştur
-        with open(output_filename, "w", encoding="utf-8") as f:
-            f.write("#EXTM3U\n")
-            f.write('#EXTINF:-1 tvg-id="" tvg-name="Vavoo Stream" group-title="Vavoo Canlı",Vavoo Özel Yayın\n')
-            f.write(f"{target_url}\n")
-            
-        print(f"[+] Başarılı! M3U dosyası oluşturuldu: {output_filename}")
-    except Exception as e:
+        # Gelen veri genellikle JSON formatında bir kanal listesidir
+        channels_data = response.json()
+        return channels_data
+        
+    except requests.exceptions.RequestException as e:
         print(f"[-] Hata oluştu: {e}")
+        return None
 
-if __name__ == '__main__':
-    main()
+def generate_m3u(channels):
+    if not channels:
+        print("[-] İşlenecek kanal verisi bulunamadı.")
+        return
+
+    m3u_file_name = "vavoo_channels.m3u"
+    
+    print(f"[*] M3U dosyası oluşturuluyor: {m3u_file_name}")
+    
+    with open(m3u_file_name, "w", encoding="utf-8") as f:
+        # M3U dosyasının standart başlangıç başlığı
+        f.write("#EXTM3U\n")
+        
+        count = 0
+        for channel in channels:
+            # Kanal adı ve url bilgisini güvenli bir şekilde çekiyoruz
+            name = channel.get("name", "Bilinmeyen Kanal")
+            url = channel.get("url")
+            group = channel.get("group", "Genel")
+            logo = channel.get("logo", "")
+            
+            if url:
+                # IPTV oynatıcıların (VLC, IPTV Smarters vb.) kanalları kategorize edebilmesi için etiketler ekliyoruz
+                f.write(f'#EXTINF:-1 tvg-logo="{logo}" group-title="{group}",{name}\n')
+                f.write(f"{url}\n")
+                count += 1
+                
+        print(f"[+] Başarılı! {count} adet kanal '{m3u_file_name}' dosyasına yazıldı.")
+
+if __name__ == "__main__":
+    # 1. Kanalları ve dinamik linkleri çek
+    raw_channels = fetch_vavoo_channels()
+    
+    # 2. Veriyi işle ve M3U formatına çevir
+    generate_m3u(raw_channels)
