@@ -2,12 +2,16 @@ name: Update Vavoo Playlist
 
 on:
   schedule:
-    - cron: '0 * * * *'        # Her saat başı
-  workflow_dispatch:           # Manuel tetikleme için
+    - cron: '15 * * * *'      # Her saat 15 dakikada bir (daha az çakışma için)
+  workflow_dispatch:
+
+permissions:
+  contents: write
 
 jobs:
   update:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04        # Daha hızlı queue için 22.04 kullanıyoruz
+    timeout-minutes: 5
 
     steps:
       - name: Checkout Repository
@@ -19,17 +23,13 @@ jobs:
           python-version: '3.11'
 
       - name: Install Dependencies
-        run: |
-          python -m pip install --upgrade pip
-          pip install requests
+        run: pip install requests
 
       - name: Run Update Script
         run: python update_playlist.py
 
-      - name: Commit and Push if changed
+      - name: Commit & Push Changes
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          commit_message: "Update Vavoo m3u8 link - Automatic"
+          commit_message: "Update Vavoo m3u8 link"
           file_pattern: playlist.m3u
-          commit_user_name: github-actions[bot]
-          commit_user_email: 41898282+github-actions[bot]@users.noreply.github.com
