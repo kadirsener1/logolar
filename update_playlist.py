@@ -7,7 +7,7 @@ from urllib.parse import urljoin, urlparse
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
 OUTPUT_FILE = "playlist.m3u"
-PROXY_BASE = ""
+PROXY_BASE = "https://vavooproxy.magnitude.workers.dev/resolve?url="
 
 # ===================== KANAL LİSTESİ =====================
 # "urls" → Liste olarak birden fazla URL yazabilirsin
@@ -21,7 +21,7 @@ CHANNELS = [
         "logo": "https://raw.githubusercontent.com/kadirsener1/logolar/master/logos/bein1.png",
         "tvg_id": "beinsports1.tr",
         "urls": [
-            "https://vavooproxy.magnitude.workers.dev/resolve?url=https://vavoo.to/vavoo-iptv/play/1363827223a1c98515d612",
+            "https://vavoo.to/vavoo-iptv/play/1363827223a1c98515d612",
             "https://vavoo.to/vavoo-iptv/play/22330664333ebb4acbb6ab"
         ]
     },
@@ -31,7 +31,7 @@ CHANNELS = [
         "logo": "https://raw.githubusercontent.com/kadirsener1/logolar/master/logos/bein2.png",
         "tvg_id": "beinsports2.tr",
         "urls": [
-            "https://avva.magnitude.workers.dev/?url=https://avvaupdate.com/95f0000dd0e/index.m3u8?o=1%26e=1779302616%26tk=dfb471fdf1eb43daaa1a4129f1258967",
+            "https://vavoo.to/vavoo-iptv/play/IKINCI_ID",
             "https://vavoo.to/vavoo-iptv/play/IKINCI_ID"
         ]
     },
