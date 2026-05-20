@@ -1,10 +1,10 @@
-CHANNELS = [
-    {
+[
+  {
         "name": "beIN Sports 1 HD",
         "group": "Spor",
         "logo": "https://raw.githubusercontent.com/kadirsener1/logolar/refs/heads/master/kanallogolari/beIN-SPORTS-1-HD.png",
         "tvg_id": "beinsports1.tr",
-        "url": "https://vavoo.to/vavoo-iptv/play/1363827223a1c98515d612"
+        "url": "https://vavooproxy.magnitude.workers.dev/resolve?url=https://vavoo.to/vavoo-iptv/play/300113394ceebba66c8ad"
     },
     {
         "name": "beIN Sports 2 HD",
@@ -33,4 +33,5 @@ CHANNELS = [
         "logo": "https://raw.githubusercontent.com/kadirsener1/logolar/master/logos/cnnturk.png",
         "tvg_id": "cnnturk.tr",
         "url": "https://vavoo.to/vavoo-iptv/play/2056768647bd7eb3f3cf70"
-    },
+    }
+]
