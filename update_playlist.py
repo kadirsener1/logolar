@@ -45,7 +45,7 @@ CHANNELS = [
         "group": "Ulusal",
         "logo": "https://raw.githubusercontent.com/kadirsener1/logolar/master/logos/showtv.png",
         "tvg_id": "showtv.tr",
-        "url": "https://vavoo.to/vavoo-iptv/play/2395422638d4ff0c834c1d"
+        "url": "https://vavoo.to/vavoo-iptv/play/144949986573359afbfeae"
     },
     {
         "name": "CNN Türk",
