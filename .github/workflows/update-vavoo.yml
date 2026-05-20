@@ -2,7 +2,7 @@ name: Update Vavoo Playlist
 
 on:
   schedule:
-    - cron: '15 * * * *'      # Her saat 15 dakikada bir (daha az çakışma için)
+    - cron: '15 * * * *'
   workflow_dispatch:
 
 permissions:
@@ -10,7 +10,7 @@ permissions:
 
 jobs:
   update:
-    runs-on: ubuntu-22.04        # Daha hızlı queue için 22.04 kullanıyoruz
+    runs-on: ubuntu-22.04
     timeout-minutes: 5
 
     steps:
@@ -23,9 +23,11 @@ jobs:
           python-version: '3.11'
 
       - name: Install Dependencies
-        run: pip install requests
+        run: pip install requests urllib3
 
       - name: Run Update Script
+        env:
+          PYTHONWARNINGS: "ignore:Unverified HTTPS request"
         run: python update_playlist.py
 
       - name: Commit & Push Changes
