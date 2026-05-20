@@ -6,7 +6,7 @@ from urllib.parse import urljoin, urlparse
 
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
-RESOLVE_URL = "https://vavooproxy.magnitude.workers.dev/resolve?url=https://vavoo.to/vavoo-iptv/play/2485009235d60801ad626b"
+RESOLVE_URL = "https://vavoo.to/vavoo-iptv/play/2485009235d60801ad626b"
 
 CHANNEL_NAME = "Vavoo TV"
 GROUP_TITLE = "Vavoo"
