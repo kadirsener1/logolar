@@ -11,7 +11,7 @@ permissions:
 jobs:
   update:
     runs-on: ubuntu-22.04
-    timeout-minutes: 5
+    timeout-minutes: 10
 
     steps:
       - name: Checkout Repository
@@ -31,5 +31,5 @@ jobs:
       - name: Commit & Push Changes
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          commit_message: "Update tokenized m3u8 link"
+          commit_message: "Update playlist - auto"
           file_pattern: playlist.m3u
