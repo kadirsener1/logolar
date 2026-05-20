@@ -40,7 +40,7 @@ CHANNELS = [
     },
     {
         "name": "beIN Sports 1 HD (yedek)",
-        "group": "Ulusal",
+        "group": "Spor",
         "logo": "https://raw.githubusercontent.com/kadirsener1/logolar/master/logos/trt1.png",
         "tvg_id": "trt1.tr",
         "urls": [
@@ -51,7 +51,7 @@ CHANNELS = [
     },
     {
         "name": "beIN Sports 1 HD (yedek 2(",
-        "group": "Ulusal",
+        "group": "Spor",
         "logo": "https://raw.githubusercontent.com/kadirsener1/logolar/master/logos/showtv.png",
         "tvg_id": "showtv.tr",
         "urls": [
