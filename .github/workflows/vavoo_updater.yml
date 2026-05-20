@@ -1,0 +1,43 @@
+name: Vavoo M3U Auto Updater
+
+# İş akışının ne zaman tetikleneceğini belirler
+on:
+  schedule:
+    # Her gün gece 03:00'te otomatik çalışır (UTC saatine göredir)
+    - cron: '0 3 * * *'
+  workflow_dispatch: # Bu seçenek, GitHub sitesinden elinizle de başlatabilmenizi sağlar
+
+jobs:
+  update-m3u:
+    runs-on: ubuntu-latest
+
+    steps:
+    # 1. Adım: Depodaki kodları GitHub sunucusuna çek
+    - name: Checkout Repository
+      uses: actions/checkout@v4
+
+    # 2. Adım: Sunucuya Python kur
+    - name: Set up Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.x'
+
+    # 3. Adım: Gerekli kütüphaneleri yükle
+    - name: Install Dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install requests
+
+    # 4. Adım: Yazdığımız Python betiğini çalıştır
+    - name: Run Python Script
+      run: python vavoo_to_m3u.py
+
+    # 5. Adım: Oluşan yeni .m3u dosyasını GitHub'a geri yükle (Push)
+    - name: Commit and Push Changes
+      run: |
+        git config --local user.email "github-actions[bot]@users.noreply.github.com"
+        git config --local user.name "github-actions[bot]"
+        git add vavoo_channels.m3u
+        
+        # Eğer değişiklik yoksa hata vermemesi için "git diff-index" kontrolü yapıyoruz
+        git diff-index --quiet HEAD || (git commit -m "Güncel Vavoo Kanalları Yüklendi" && git push)
