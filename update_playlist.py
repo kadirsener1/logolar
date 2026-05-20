@@ -6,11 +6,65 @@ from urllib.parse import urljoin, urlparse
 
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
-RESOLVE_URL = "https://vavooproxy.magnitude.workers.dev/resolve?url=https://vavoo.to/vavoo-iptv/play/2485009235d60801ad626b"
-
-CHANNEL_NAME = "Vavoo TV"
-GROUP_TITLE = "Vavoo"
 OUTPUT_FILE = "playlist.m3u"
+PROXY_BASE = "https://vavooproxy.magnitude.workers.dev/resolve?url="
+
+# ===================== KANAL LİSTESİ =====================
+# Her kanala şunları yaz:
+#   "name"     : Kanal adı
+#   "group"    : Grup adı (Spor, Haber, Sinema, vb.)
+#   "logo"     : Logo URL'si (boş bırakabilirsin "")
+#   "tvg_id"   : EPG ID (boş bırakabilirsin "")
+#   "url"      : Vavoo orijinal linki
+# ==========================================================
+
+CHANNELS = [
+    {
+        "name": "beIN Sports 1 HD",
+        "group": "Spor",
+        "logo": "https://raw.githubusercontent.com/kadirsener1/logolar/refs/heads/master/kanallogolari/beIN-SPORTS-1-HD.png",
+        "tvg_id": "beinsports1.tr",
+        "url": "https://vavoo.to/vavoo-iptv/play/1363827223a1c98515d612"
+    },
+    {
+        "name": "beIN Sports 2 HD",
+        "group": "Spor",
+        "logo": "https://raw.githubusercontent.com/kadirsener1/logolar/master/logos/bein2.png",
+        "tvg_id": "beinsports2.tr",
+        "url": "https://vavoo.to/vavoo-iptv/play/1447241506bdccfad8b85c"
+    },
+    {
+        "name": "TRT 1 HD",
+        "group": "Ulusal",
+        "logo": "https://raw.githubusercontent.com/kadirsener1/logolar/master/logos/trt1.png",
+        "tvg_id": "trt1.tr",
+        "url": "https://vavoo.to/vavoo-iptv/play/2041026135d10f9c36ff66"
+    },
+    {
+        "name": "Show TV",
+        "group": "Ulusal",
+        "logo": "https://raw.githubusercontent.com/kadirsener1/logolar/master/logos/showtv.png",
+        "tvg_id": "showtv.tr",
+        "url": "https://vavoo.to/vavoo-iptv/play/8795889605c7795ac9528"
+    },
+    {
+        "name": "CNN Türk",
+        "group": "Haber",
+        "logo": "https://raw.githubusercontent.com/kadirsener1/logolar/master/logos/cnnturk.png",
+        "tvg_id": "cnnturk.tr",
+        "url": "https://vavoo.to/vavoo-iptv/play/2056768647bd7eb3f3cf70"
+    },
+    # ========================================================
+    # DAHA FAZLA KANAL EKLEMEK İÇİN AŞAĞIYA KOPYALA YAPIŞTIR:
+    # ========================================================
+    # {
+    #     "name": "Kanal Adı",
+    #     "group": "Grup Adı",
+    #     "logo": "https://logo-linki.png",
+    #     "tvg_id": "epg.id",
+    #     "url": "https://vavoo.to/vavoo-iptv/play/KANAL_ID"
+    # },
+]
 
 
 def make_absolute(url, base_url):
@@ -31,31 +85,29 @@ def extract_url_from_json(data, base_url):
             result = extract_url_from_json(value, base_url)
             if result:
                 return result
-
     elif isinstance(data, list):
         for item in data:
             result = extract_url_from_json(item, base_url)
             if result:
                 return result
-
     elif isinstance(data, str):
         text = data.strip()
         if ".m3u8" in text or "/sunshine/" in text:
             return make_absolute(text, base_url)
-
     return None
 
 
-def get_m3u8_url():
+def resolve_channel(vavoo_url):
+    resolve_url = PROXY_BASE + vavoo_url
+
     headers = {
         "User-Agent": "Mozilla/5.0",
         "Accept": "*/*"
     }
 
     session = requests.Session()
-
     response = session.get(
-        RESOLVE_URL,
+        resolve_url,
         headers=headers,
         timeout=30,
         verify=False,
@@ -66,32 +118,26 @@ def get_m3u8_url():
     content = response.text.strip()
     final_url = response.url
 
-    print("Final response.url:", final_url)
-
-    # 1) En önemli durum:
-    # Eğer endpoint doğrudan m3u8 içeriği döndürdüyse,
-    # gerçek tokenlı link response.url içindedir.
+    # 1) Body m3u8 içeriği döndüyse → response.url tokenlı linktir
     if content.startswith("#EXTM3U"):
-        if final_url and final_url != RESOLVE_URL:
+        if final_url and final_url != resolve_url:
             return final_url
-
-        # response.url değişmediyse redirect history'den çek
         for hist in reversed(response.history):
             location = hist.headers.get("Location")
             if location and (".m3u8" in location or "/sunshine/" in location):
                 return make_absolute(location, hist.url)
 
-    # 2) Direkt body içinde tam URL dönüyorsa
+    # 2) Direkt URL dönüyorsa
     if content.startswith("http") and ".m3u8" in content:
         return make_absolute(content, final_url)
 
-    # 3) Body içinde relative token path dönüyorsa
+    # 3) Relative path dönüyorsa
     if (content.startswith("/") or content.startswith("sunshine/")) and (
         ".m3u8" in content or "/sunshine/" in content
     ):
         return make_absolute(content, final_url)
 
-    # 4) JSON ise içinden çek
+    # 4) JSON ise
     try:
         data = response.json()
         json_url = extract_url_from_json(data, final_url)
@@ -100,34 +146,59 @@ def get_m3u8_url():
     except Exception:
         pass
 
-    # 5) Redirect geçmişini ayrıca kontrol et
+    # 5) Redirect history
     for hist in reversed(response.history):
         location = hist.headers.get("Location")
         if location and (".m3u8" in location or "/sunshine/" in location):
             return make_absolute(location, hist.url)
 
-    raise Exception(
-        "Tokenlı m3u8 linki bulunamadı.\n"
-        f"response.url = {final_url}\n"
-        f"response.text[:500] = {content[:500]}"
-    )
+    return None
 
 
 def main():
-    print(f"[{datetime.now()}] Tokenlı m3u8 linki çözülüyor...")
+    print(f"[{datetime.now()}] Playlist güncelleniyor...")
+    print(f"Toplam {len(CHANNELS)} kanal işlenecek.\n")
 
-    m3u8_url = get_m3u8_url()
-    print("Bulunan tokenlı link:", m3u8_url)
+    lines = ['#EXTM3U']
+    success = 0
+    failed = 0
 
-    m3u_content = f"""#EXTM3U
-#EXTINF:-1 group-title="{GROUP_TITLE}" tvg-id="",{CHANNEL_NAME}
-{m3u8_url}
-"""
+    for i, ch in enumerate(CHANNELS, 1):
+        name = ch["name"]
+        group = ch.get("group", "Genel")
+        logo = ch.get("logo", "")
+        tvg_id = ch.get("tvg_id", "")
+        vavoo_url = ch["url"]
+
+        print(f"[{i}/{len(CHANNELS)}] {name} çözülüyor...")
+
+        try:
+            m3u8_url = resolve_channel(vavoo_url)
+
+            if m3u8_url:
+                extinf = f'#EXTINF:-1 tvg-id="{tvg_id}" tvg-logo="{logo}" group-title="{group}",{name}'
+                lines.append(extinf)
+                lines.append(m3u8_url)
+                print(f"  ✅ Başarılı: {m3u8_url[:80]}...")
+                success += 1
+            else:
+                print(f"  ❌ Link bulunamadı, atlanıyor.")
+                failed += 1
+
+        except Exception as e:
+            print(f"  ❌ Hata: {str(e)[:100]}")
+            failed += 1
+
+    # M3U dosyasını yaz
+    m3u_content = "\n".join(lines) + "\n"
 
     with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
         f.write(m3u_content)
 
-    print(f"{OUTPUT_FILE} güncellendi.")
+    print(f"\n{'='*50}")
+    print(f"✅ Başarılı: {success} kanal")
+    print(f"❌ Başarısız: {failed} kanal")
+    print(f"📄 {OUTPUT_FILE} güncellendi!")
 
 
 if __name__ == "__main__":
