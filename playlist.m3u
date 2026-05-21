@@ -1,215 +1,25 @@
 #EXTM3U
-#EXTINF:-1 tvg-id="bein-sports-1-turkey" tvg-name="beIN Sports 1 Turkey" group-title="TV247",beIN Sports 1 Turkey
-https://chat.cfbu247.sbs/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI2MiIsInRzIjoxNzc5Mzk2Njg0NDQyfQ==
-#EXTINF:-1 tvg-id="bein-sports-2-turkey" tvg-name="beIN Sports 2 Turkey" group-title="TV247",beIN Sports 2 Turkey
-https://chat.cfbu247.sbs/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI2MyIsInRzIjoxNzc5Mzk2Njg1NDQyfQ==
-#EXTINF:-1 tvg-id="bein-sports-3-turkey" tvg-name="beIN Sports 3 Turkey" group-title="TV247",beIN Sports 3 Turkey
-https://chat.cfbu247.sbs/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI2NCIsInRzIjoxNzc5Mzk2Njg2NDQzfQ==
-#EXTINF:-1 tvg-id="bein-sports-4-turkey" tvg-name="beIN Sports 4 Turkey" group-title="TV247",beIN Sports 4 Turkey
-https://chat.cfbu247.sbs/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI2NyIsInRzIjoxNzc5Mzk2Njg3NDQzfQ==
-#EXTINF:-1 tvg-id="bein-sports-5-turkey" tvg-name="beIN Sports 5 Turkey" group-title="TV247",beIN Sports 5 Turkey
-https://chat.cfbu247.sbs/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiIxMDEwIiwidHMiOjE3NzkzOTY2ODg0NDN9
-#EXTINF:-1 tvg-id="atv-turkey" tvg-name="atv Turkey" group-title="TV247",atv Turkey
-https://chat.cfbu247.sbs/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiIxMDAwIiwidHMiOjE3NzkzOTY2ODk0NDR9
-#EXTINF:-1 tvg-id="arena-sport-1-premium" tvg-name="arena sport 1 premium" group-title="TV247",arena sport 1 premium
-https://chat.cfbu247.sbs/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiIxMzQiLCJ0cyI6MTc3OTM5NjY5MDQ0NH0=
-#EXTINF:-1 tvg-id="1" tvg-logo="https://avvasportshd1.com/uploads/logos/1777556242_61b4d381230a63fbdb84.jpeg" group-title="Spor",beIN SPORTS 1 HD Avva
-https://avva.magnitude.workers.dev/?url=https://avvaupdate.com/95f0000dd0e/index.m3u8?o=1%26e=1779402485%26tk=15ae9c8f9ee33d01b3f19c6505907cec
-#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/kadirsener1/logolar/refs/heads/master/kanallogolari/bein.png" group-title="Spor",beIN Sports 1-Gav
-https://gavatlar.b-cdn.net/bein.m3u8
-#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/kadirsener1/logolar/refs/heads/master/kanallogolari/bein.png" group-title="Spor",beIN Sports 1-Ron
-https://ronaldo.magnitude.workers.dev/?url=https://corestream.ronaldovurdu.help//bein1/tracks-v1a1/mono.m3u8
-#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/kadirsener1/logolar/refs/heads/master/kanallogolari/bein.png" group-title="Spor",beIN Sports 1-HİT refe
-#EXTVLCOPT:http-referrer= https://www.hitv.fun
-https://api.hitnova.net/s/zirve/mono.m3u8
-#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/kadirsener1/logolar/refs/heads/master/kanallogolari/bein.png" group-title="Spor",beIN Sports 1-HİT
-https://api.hitnova.net/s/zirve/mono.m3u8
-#EXTINF:-1 tvg-id="2" tvg-logo="https://avvasportshd1.com/uploads/logos/1777559808_1357a6ec8b0917e4a713.png" group-title="Avva Sports",beIN SPORTS 2 HD
-https://avva.magnitude.workers.dev/?url=https://avvaupdate.com/bein2/index.m3u8?o=1%26e=1779402485%26tk=15ae9c8f9ee33d01b3f19c6505907cec
-#EXTINF:-1 tvg-id="3" tvg-logo="https://avvasportshd1.com/uploads/logos/1777559846_2789e29889c0139bb875.png" group-title="Avva Sports",beIN SPORTS 3 HD
-https://avva.magnitude.workers.dev/?url=https://avvaupdate.com/bein3/index.m3u8?o=1%26e=1779402485%26tk=15ae9c8f9ee33d01b3f19c6505907cec
-#EXTINF:-1 tvg-id="4" tvg-logo="https://avvasportshd1.com/uploads/logos/1777559866_63b20549dd277e685e49.png" group-title="Avva Sports",beIN SPORTS 4 HD
-https://avva.magnitude.workers.dev/?url=https://avvaupdate.com/bein4/index.m3u8?o=1%26e=1779402485%26tk=15ae9c8f9ee33d01b3f19c6505907cec
-#EXTINF:-1 tvg-id="5" tvg-logo="https://avvasportshd1.com/uploads/logos/1777559890_040f71e54618a5a7e704.png" group-title="Avva Sports",beIN SPORTS 5 HD
-https://avva.magnitude.workers.dev/?url=https://avvaupdate.com/bein5/index.m3u8?o=1%26e=1779402485%26tk=15ae9c8f9ee33d01b3f19c6505907cec
-#EXTINF:-1 tvg-id="6" tvg-logo="https://avvasportshd1.com/uploads/logos/1777559926_af52bf56050d3d1bb98d.png" group-title="Avva Sports",beIN SPORTS HD MAX 1
-https://avva.magnitude.workers.dev/?url=https://avvaupdate.com/beinhdmax1/index.m3u8?o=1%26e=1779402485%26tk=15ae9c8f9ee33d01b3f19c6505907cec
-#EXTINF:-1 tvg-id="7" tvg-logo="https://avvasportshd1.com/uploads/logos/1777559944_7e98e4acce869d0f86e4.png" group-title="Avva Sports",beIN SPORTS HD MAX 2
-https://avva.magnitude.workers.dev/?url=https://avvaupdate.com/bein2hdmax/index.m3u8?o=1%26e=1779402485%26tk=15ae9c8f9ee33d01b3f19c6505907cec
-#EXTINF:-1 tvg-id="13" tvg-logo="https://avvasportshd1.com/uploads/logos/1777560294_1a980cf1624b0a3ba28a.png" group-title="Avva Sports",S SPORT 1
-https://avva.magnitude.workers.dev/?url=https://avvaupdate.com/ssport1/index.m3u8?o=1%26e=1779402485%26tk=15ae9c8f9ee33d01b3f19c6505907cec
-#EXTINF:-1 tvg-id="14" tvg-logo="https://avvasportshd1.com/uploads/logos/1777560319_373e7c60ddba69b1a3be.png" group-title="Avva Sports",S SPORT 2
-https://avva.magnitude.workers.dev/?url=https://avvaupdate.com/ssport2/index.m3u8?o=1%26e=1779402485%26tk=15ae9c8f9ee33d01b3f19c6505907cec
-#EXTINF:-1 tvg-id="15" tvg-logo="https://avvasportshd1.com/uploads/logos/1777560336_feaa41fc9bd9fb3d5c4c.png" group-title="Avva Sports",S SPORT PLUS
-https://avva.magnitude.workers.dev/?url=https://avvaupdate.com/ssportplus/index.m3u8?o=1%26e=1779402485%26tk=15ae9c8f9ee33d01b3f19c6505907cec
-#EXTINF:-1 tvg-id="24" tvg-logo="https://avvasportshd1.com/uploads/logos/1777560637_143925d3aa62a00bf7a1.png" group-title="Avva Sports",TİVİBUSPOR
-https://avva.magnitude.workers.dev/?url=https://avvaupdate.com/tivibuspor/index.m3u8?o=1%26e=1779402485%26tk=15ae9c8f9ee33d01b3f19c6505907cec
-#EXTINF:-1 tvg-id="25" tvg-logo="https://avvasportshd1.com/uploads/logos/1777560651_088be25604a8dbacea76.png" group-title="Avva Sports",TİVİBUSPOR 2
-https://avva.magnitude.workers.dev/?url=https://avvaupdate.com/tivibuspor2/index.m3u8?o=1%26e=1779402485%26tk=15ae9c8f9ee33d01b3f19c6505907cec
-#EXTINF:-1 tvg-id="26" tvg-logo="https://avvasportshd1.com/uploads/logos/1777560665_e9c0a11ecc9198477135.png" group-title="Avva Sports",TİVİBUSPOR 3
-https://avva.magnitude.workers.dev/?url=https://avvaupdate.com/tivibuspor3/index.m3u8?o=1%26e=1779402485%26tk=15ae9c8f9ee33d01b3f19c6505907cec
-#EXTINF:-1 tvg-id="27" tvg-logo="https://avvasportshd1.com/uploads/logos/1777560681_86f00db94128767ed08e.png" group-title="Avva Sports",TİVİBUSPOR 4
-https://avva.magnitude.workers.dev/?url=https://avvaupdate.com/tivibuspor4/index.m3u8?o=1%26e=1779402485%26tk=15ae9c8f9ee33d01b3f19c6505907cec
-#EXTINF:-1 tvg-id="16" tvg-logo="https://avvasportshd1.com/uploads/logos/1777560373_907498ad1b3c0a3e2309.png" group-title="Avva Sports",SMART SPOR
-https://avva.magnitude.workers.dev/?url=https://avvaupdate.com/smartsport1/index.m3u8?o=1%26e=1779402485%26tk=15ae9c8f9ee33d01b3f19c6505907cec
-#EXTINF:-1 tvg-id="17" tvg-logo="https://avvasportshd1.com/uploads/logos/1777560388_b104ff51d48a670b6a14.png" group-title="Avva Sports",SMART SPOR 2
-https://avva.magnitude.workers.dev/?url=https://avvaupdate.com/smartsport2/index.m3u8?o=1%26e=1779402485%26tk=15ae9c8f9ee33d01b3f19c6505907cec
-#EXTINF:-1 tvg-id="18" tvg-logo="https://avvasportshd1.com/uploads/logos/1777560420_779f4e29a25beed572ee.png" group-title="Avva Sports",TABİİ SPOR
-https://avva.magnitude.workers.dev/?url=https://avvaupdate.com/tabiispor/index.m3u8?o=1%26e=1779402485%26tk=15ae9c8f9ee33d01b3f19c6505907cec
-#EXTINF:-1 tvg-id="19" tvg-logo="https://avvasportshd1.com/uploads/logos/1777560440_2bd5ca1791c72931a0dc.png" group-title="Avva Sports",TABİİ SPOR 1
-https://avva.magnitude.workers.dev/?url=https://avvaupdate.com/tabiispor1a/index.m3u8?o=1%26e=1779402485%26tk=15ae9c8f9ee33d01b3f19c6505907cec
-#EXTINF:-1 tvg-id="20" tvg-logo="https://avvasportshd1.com/uploads/logos/1777560470_b7883c77ba2c0e7dbda9.png" group-title="Avva Sports",TABİİ SPOR 2
-https://avva.magnitude.workers.dev/?url=https://avvaupdate.com/tabiispor2/index.m3u8?o=1%26e=1779402485%26tk=15ae9c8f9ee33d01b3f19c6505907cec
-#EXTINF:-1 tvg-id="21" tvg-logo="https://avvasportshd1.com/uploads/logos/1777560492_09ed07a8bc4de1974219.png" group-title="Avva Sports",TABİİ SPOR 3
-https://avva.magnitude.workers.dev/?url=https://avvaupdate.com/tabiispor3/index.m3u8?o=1%26e=1779402485%26tk=15ae9c8f9ee33d01b3f19c6505907cec
-#EXTINF:-1 tvg-id="22" tvg-logo="https://avvasportshd1.com/uploads/logos/1777560506_fcd2118838e07702ccbb.png" group-title="Avva Sports",TABİİ SPOR 4
-https://avva.magnitude.workers.dev/?url=https://avvaupdate.com/tabiispor4/index.m3u8?o=1%26e=1779402485%26tk=15ae9c8f9ee33d01b3f19c6505907cec
-#EXTINF:-1 tvg-id="23" tvg-logo="https://avvasportshd1.com/uploads/logos/1777560520_387804be766f5bac463b.png" group-title="Avva Sports",TABİİ SPOR 5
-https://avva.magnitude.workers.dev/?url=https://avvaupdate.com/tabiispor5/index.m3u8?o=1%26e=1779402485%26tk=15ae9c8f9ee33d01b3f19c6505907cec
-#EXTINF:-1 tvg-id="8" tvg-logo="https://avvasportshd1.com/uploads/logos/1777560002_5bd33b50a9ad89c8c380.png" group-title="Avva Sports",EXXEN 1
-https://avva.magnitude.workers.dev/?url=https://avvaupdate.com/exxen1/index.m3u8?o=1%26e=1779402485%26tk=15ae9c8f9ee33d01b3f19c6505907cec
-#EXTINF:-1 tvg-id="9" tvg-logo="https://avvasportshd1.com/uploads/logos/1777560017_4d9f3df725b7b3ea25ad.png" group-title="Avva Sports",EXXEN 2
-https://avva.magnitude.workers.dev/?url=https://avvaupdate.com/exxen2/index.m3u8?o=1%26e=1779402485%26tk=15ae9c8f9ee33d01b3f19c6505907cec
-#EXTINF:-1 tvg-id="10" tvg-logo="https://avvasportshd1.com/uploads/logos/1777560031_c09ccc9c782724982b6b.png" group-title="Avva Sports",EXXEN 3
-https://avva.magnitude.workers.dev/?url=https://avvaupdate.com/exxen3/index.m3u8?o=1%26e=1779402485%26tk=15ae9c8f9ee33d01b3f19c6505907cec
-#EXTINF:-1 tvg-id="11" tvg-logo="https://avvasportshd1.com/uploads/logos/1777560045_e7c6abfe934091137d76.png" group-title="Avva Sports",EXXEN 4
-https://avva.magnitude.workers.dev/?url=https://avvaupdate.com/exxen4/index.m3u8?o=1%26e=1779402485%26tk=15ae9c8f9ee33d01b3f19c6505907cec
-#EXTINF:-1 tvg-id="12" tvg-logo="https://avvasportshd1.com/uploads/logos/1777560060_2fc5771ade410ea2658e.png" group-title="Avva Sports",EXXEN 5
-https://avva.magnitude.workers.dev/?url=https://avvaupdate.com/exxen5/index.m3u8?o=1%26e=1779402485%26tk=15ae9c8f9ee33d01b3f19c6505907cec
-#EXTINF:-1 tvg-id="28" tvg-logo="https://avvasportshd1.com/uploads/logos/1777560710_af6b5d6bc6dc28e6b225.png" group-title="Avva Sports",TRT 1
-https://avva.magnitude.workers.dev/?url=https://avvaupdate.com/trt1/index.m3u8?o=1%26e=1779402485%26tk=15ae9c8f9ee33d01b3f19c6505907cec
-#EXTINF:-1 tvg-id="29" tvg-logo="https://avvasportshd1.com/uploads/logos/1777560725_e87194099025e7679b17.png" group-title="Avva Sports",TRT SPOR
-https://avva.magnitude.workers.dev/?url=https://avvaupdate.com/trtspor/index.m3u8?o=1%26e=1779402485%26tk=15ae9c8f9ee33d01b3f19c6505907cec
-#EXTINF:-1 tvg-id="30" tvg-logo="https://avvasportshd1.com/uploads/logos/1777560747_695852207939f0b9ccba.png" group-title="Avva Sports",TV 8
-https://avva.magnitude.workers.dev/?url=https://avvaupdate.com/tv8/index.m3u8?o=1%26e=1779402485%26tk=15ae9c8f9ee33d01b3f19c6505907cec
-#EXTINF:-1 tvg-id="31" tvg-logo="https://avvasportshd1.com/uploads/logos/1777560770_46d37670472b5c8156fd.png" group-title="Avva Sports",TV 8.5
-https://api.hitnova.net/s/tv85/mono.m3u8
-#EXTINF:-1 tvg-id="32" tvg-logo="https://avvasportshd1.com/uploads/logos/1777560801_2c4378c937808336db7d.png" group-title="Avva Sports",A SPOR
-https://avva.magnitude.workers.dev/?url=https://avvaupdate.com/aspor/index.m3u8?o=1%26e=1779402485%26tk=15ae9c8f9ee33d01b3f19c6505907cec
-#EXTINF:-1 tvg-id="33" tvg-logo="https://avvasportshd1.com/uploads/logos/1777560813_a1327f34eaf278d46cca.png" group-title="Avva Sports",A HABER
-https://avva.magnitude.workers.dev/?url=https://avvaupdate.com/ahaber/index.m3u8?o=1%26e=1779402485%26tk=15ae9c8f9ee33d01b3f19c6505907cec
-#EXTINF:-1 tvg-id="34" tvg-logo="https://avvasportshd1.com/uploads/logos/1777560831_89666f2f82d64d3393e4.png" group-title="Avva Sports",ATV
-https://rnttwmjcin.turknet.ercdn.net/lcpmvefbyo/atv/atv_1080p.m3u8
-#EXTINF:-1 group-title="Spor",beIN Sports 2-R
-https://ronaldo.magnitude.workers.dev/?url=https://corestream.ronaldovurdu.help/bein2/tracks-v1a1/mono.m3u8
-#EXTINF:-1 group-title="Spor",beIN Sports 3-R
-https://ronaldo.magnitude.workers.dev/?url=https://corestream.ronaldovurdu.help/bein3/tracks-v1a1/mono.m3u8
-#EXTINF:-1 group-title="Spor",beIN Sports 4-R
-https://ronaldo.magnitude.workers.dev/?url=https://corestream.ronaldovurdu.help/bein4/tracks-v1a1/mono.m3u8
-#EXTINF:-1 group-title="Spor",beIN Sports 5-R
-https://ronaldo.magnitude.workers.dev/?url=https://corestream.ronaldovurdu.help/bein5/tracks-v1a1/mono.m3u8
-#EXTINF:-1 group-title="Spor",beIN Sports Max 1-R
-https://ronaldo.magnitude.workers.dev/?url=https://corestream.ronaldovurdu.help/hls/bein-sports-max-1.m3u8
-#EXTINF:-1 group-title="Spor",beIN Sports Max 2-R
-https://ronaldo.magnitude.workers.dev/?url=https://corestream.ronaldovurdu.help/hls/bein-sports-max-2.m3u8
-#EXTINF:-1 group-title="Spor",S Sport-R
-https://ronaldo.magnitude.workers.dev/?url=https://corestream.ronaldovurdu.help/s-sport/tracks-v1a1/mono.m3u8
-#EXTINF:-1 group-title="Spor",S Sport 2-R
-https://ronaldo.magnitude.workers.dev/?url=https://corestream.ronaldovurdu.help//s-sport2/tracks-v1a1/mono.m3u8
-#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/tr/b/b2/SporSMART_HD_logo.png" group-title="Spor",beIN Sports 2-HİT
-https://api.hitnova.net/s/b2/mono.m3u8
-#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/tr/b/b2/SporSMART_HD_logo.png" group-title="Spor",beIN Sports 3-HİT
-https://api.hitnova.net/s/b3/mono.m3u8
-#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/tr/b/b2/SporSMART_HD_logo.png" group-title="Spor",beIN Sports 4-HİT
-https://api.hitnova.net/s/b4/mono.m3u8
-#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/tr/b/b2/SporSMART_HD_logo.png" group-title="Spor",beIN Sports 5-HİT
-https://api.hitnova.net/s/b5/mono.m3u8
-#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/tr/b/b2/SporSMART_HD_logo.png" group-title="Spor",beIN Sports Max 1-HİT
-https://api.hitnova.net/s/bm1/mono.m3u8
-#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/tr/b/b2/SporSMART_HD_logo.png" group-title="Spor",beIN Sports Max2-HİT
-https://api.hitnova.net/s/bm2/mono.m3u8
-#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/0/07/S_Sport_logo.png" group-title="Spor",S Sport 1-HİT
-https://api.hitnova.net/s/ss/mono.m3u8
-#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/0/07/S_Sport_logo.png" group-title="Spor",S Sport 2-HİT
-https://api.hitnova.net/s/ss2/mono.m3u8
-#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/tr/d/db/TivibuSporLogo1.PNG" group-title="Spor",Tivibu Spor 1-HİT
-https://api.hitnova.net/s/t1/mono.m3u8
-#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/tr/d/db/TivibuSporLogo1.PNG" group-title="Spor",Tivibu Spor 2-HİT
-https://api.hitnova.net/s/t2/mono.m3u8
-#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/tr/d/db/TivibuSporLogo1.PNG" group-title="Spor",Tivibu Spor 3-HİT
-https://api.hitnova.net/s/t3/mono.m3u
-#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/tr/d/db/TivibuSporLogo1.PNG" group-title="Spor",Tivibu Spor 4-HİT
-https://api.hitnova.net/s/t4/mono.m3u8
-#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/tr/b/b2/SporSMART_HD_logo.png" group-title="Spor",Smart Sport 1-HİT
-https://api.hitnova.net/s/smarts/mono.m3u8
-#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/tr/b/b2/SporSMART_HD_logo.png" group-title="Spor",Smart Sport 2-HİT
-https://api.hitnova.net/s/sms2/mono.m3u8
-#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/e/e6/Eurosport_1_Logo_2015.png" group-title="Spor",Eurosport 1-HİT
-https://api.hitnova.net/s/eu1/mono.m3u8
-#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/d/d0/Eurosport_2_Logo_2015.png" group-title="Spor",Eurosport 2-HİT
-https://api.hitnova.net/s/eu2/mono.m3u8
-#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/tr/e/e9/A_Spor_logosu.png" group-title="Spor",A Spor-HİT
-https://api.hitnova.net/s/as/mono.m3u8
-#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/kadirsener1/logolar/refs/heads/master/kanallogolari/trt1.png" group-title="Ulusal",TRT 1
-https://avva.magnitude.workers.dev/?url=https://avvaupdate.com/trt1/index.m3u8?o=1%26e=1779402485%26tk=15ae9c8f9ee33d01b3f19c6505907cec
-#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/kadirsener1/logolar/refs/heads/master/kanallogolari/kanald.png" group-title="Ulusal",Kanal D
-https://demiroren.daioncdn.net/kanald/kanald_1080p.m3u8?&sid=8fhhhz56azvs&app=da2109ea-5dfe-4107-89ab-23593336ed61&ce=3
-#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/kadirsener1/logolar/refs/heads/master/kanallogolari/kanald.png" group-title="Ulusal",Kanal D-2
-https://ackaxsqacw.turknet.ercdn.net/ozfkfbbjba/kanald/kanald_1080p.m3u8
-#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/kadirsener1/logolar/refs/heads/master/kanallogolari/atv.png" group-title="Ulusal",ATV
-https://rnttwmjcin.turknet.ercdn.net/lcpmvefbyo/atv/atv_1080p.m3u8
-#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/7/78/Atv_logosu.png" group-title="Ulusal",ATV-2
-https://rnttwmjcin.turknet.ercdn.net/lcpmvefbyo/atv/atv_1080p.m3u8
-#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/f/f1/Logo_of_Show_TV.png" group-title="Ulusal",Show Tv
-https://rmtftbjlne.turknet.ercdn.net/bpeytmnqyp/showtv/showtv_1080p.m3u8
-#EXTINF:-1 tvg-logo="https://filedn.eu/l5ABGVFVcpIfW9YXHkcxLX7/freelogo/fox-turkiye-logo.png" group-title="Ulusal",Now Tv FHD1
-https://td3wb1bchdvsahp.ngolpdkyoctjcddxshli469r.org/sunshine/IqZGbjIAB3F9jCMrJf-5k77uVc8am2G7gzcJPJcACL7n2-kEc6mAXEkIvNFQ79lItl1mGbjI4_Bcpe9ZdOrWUzKr8gELC7jsSP7GO4FjZANoXKsSlAQogtFTB8d7EZCn9JeQDqGmFfEn74GNByyIJxUHMHW69f-ZYztQ-bKHhysQ4UCyd1iAQEHRhw6L5v08Rj5aK3PTTn7xveQr4nPVKnN4KDazmmOJH-CgcdFHXEYVFE2JWRTJRhbEy2fMKz29qj6aIuuBTtf8zKLW87QH5-c6oh6n11ApysuyBF1rfOA/hls/index.m3u8
-#EXTINF:-1 tvg-logo="https://filedn.eu/l5ABGVFVcpIfW9YXHkcxLX7/freelogo/fox-turkiye-logo.png" group-title="Ulusal",Now Tv HD
-https://uycyyuuzyh.turknet.ercdn.net/nphindgytw/nowtv/nowtv_720p.m3u8
-#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/kadirsener1/logolar/refs/heads/master/kanallogolari/tv8.png" group-title="Ulusal",Tv 8
-https://api.hitnova.net/s/tv8/mono.m3u8
-#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/kadirsener1/logolar/refs/heads/master/kanallogolari/tv8_5.png" group-title="Ulusal" ,Tv 8,5 HD
-https://tv8.daioncdn.net/tv8bucuk/tv8bucuk_1080p.m3u8?app=tv8bucuk_web
-#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/kadirsener1/logolar/refs/heads/master/kanallogolari/kanal7.png" group-title="Ulusal",Kanal 7
-https://yurhnwtpys.turknet.ercdn.net/cvmbjbpmdx/kanal7/kanal7_1080p.m3u8
-#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/kadirsener1/logolar/refs/heads/master/kanallogolari/a2.png" group-title="Ulusal" ,a2 HD
-https://rnttwmjcin.turknet.ercdn.net/lcpmvefbyo/a2tv/a2tv_1080p.m3u8
-#EXTINF:-1 tvg-id="39" tvg-logo="https://raw.githubusercontent.com/kadirsener1/logolar/refs/heads/master/kanallogolari/trt_genc.png" group-title="Ulusal",TRT GENÇ
-https://tv-trtgenc.medya.trt.com.tr/master.m3u8
-#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/b/b5/NTV_logo.png" group-title="HABER",Ntv
-https://dogus.daioncdn.net/ntv/ntv_1080p.m3u8
-#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/6/6b/TRT_Haber_logosu_%282013-2020%29.png" group-title="HABER",Trt Haber
-https://tv-trthaber.medya.trt.com.tr/master.m3u8
-#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/7/78/Haberturk_logo.png" group-title="HABER",Haber  Türk
-https://rmtftbjlne.turknet.ercdn.net/bpeytmnqyp/haberturktv/haberturktv_1080p.m3u8
-#EXTINF:-1 tvg-logo="https://i.hizliresim.com/qg6q0zx.png" group-title="HABER",Haber Global
-https://tv.ensonhaber.com/haberglobal/haberglobal_720p.m3u8
-#EXTINF:-1 tvg-id="120" tvg-logo="https://feo.kablowebtv.com/resize/168A635D265A4328C2883FB4CD8FF/0/0/Vod/HLS/3261c5eb-0e08-4c96-b8fc-58211e3da29c.png" group-title="Çocuk",Trt Çocuk
-https://tv-trtcocuk.medya.trt.com.tr/master.m3u8
-#EXTINF:-1 tvg-id="123" tvg-logo="https://feo.kablowebtv.com/resize/168A635D265A4328C2883FB4CD8FF/0/0/Vod/HLS/7e733bf8-6c0e-4d6e-b18a-5864e571894b.png" group-title="Çocuk",Trt Diyanet Çocuk
-https://tv-trtdiyanetcocuk.medya.trt.com.tr/master.m3u8
-#EXTINF:-1 tvg-id="minikacocuk" tvg-logo="https://img.dsmartgo.com.tr/content/2/Q2/13402/Thumbnail.png" tvg-name="Minika Çocuk" group-title="Çocuk",Minika Çocuk
-https://rnttwmjcin.turknet.ercdn.net/lcpmvefbyo/minikago_cocuk/minikago_cocuk.m3u8
-#EXTINF:-1 tvg-id="minikago" tvg-logo="https://img.dsmartgo.com.tr/content/I/WS/13404/Thumbnail.png" tvg-name="Minika Go" group-title="Çocuk",Minika Go
-https://rnttwmjcin.turknet.ercdn.net/lcpmvefbyo/minikago/minikago.m3u8
-#EXTINF:-1 tvg-id="127" tvg-logo="https://feo.kablowebtv.com/resize/168A635D265A4328C2883FB4CD8FF/0/0/Vod/HLS/51d3a383-2842-4a4c-b622-20f09b309973.png" group-title="Çocuk",Disney Junior
-https://saran-live.ercdn.net/disneyjunior/index.m3u8
-#EXTINF:-1 tvg-id="126" tvg-logo="https://feo.kablowebtv.com/resize/168A635D265A4328C2883FB4CD8FF/0/0/Vod/HLS/2442b7b7-04da-41c1-a7ca-03466853040e.png" group-title="Çocuk",Baby Tv
-https://saran-live.ercdn.net/babytv/index.m3u8
-#EXTINF:-1 tvg-id="137" tvg-logo="https://feo.kablowebtv.com/resize/168A635D265A4328C2883FB4CD8FF/0/0/Vod/HLS/47fcca43-c2ac-4ab8-ae92-2b007655be9f.png" group-title="Çocuk",TRT Eba TV
-https://tv-e-okul01.medya.trt.com.tr/master.m3u8
-#EXTINF:-1 tvg-id="137" tvg-logo="https://itv224226.tmp.tivibu.com.tr:6430/images/poster/20210421003212.png" group-title="Çocuk",Cartoon Network
-http://65.108.239.207:80/cartoonnetwork/index.m3u8#EXTINF:-1 tvg-id="beinsports1.tr" tvg-logo="https://raw.githubusercontent.com/kadirsener1/logolar/master/logos/bein1.png" group-title="Spor",beIN 1 HD magni
-https://vavooproxy.magnitude.workers.dev/resolve?url=https://vavoo.to/vavoo-iptv/play/22330664333ebb4acbb6ab
 #EXTINF:-1 tvg-id="beinsports1.tr" tvg-logo="https://raw.githubusercontent.com/kadirsener1/logolar/master/logos/bein1.png" group-title="Spor",beIN 1 HD
-https://qmaalhy7acgxwhm.ngolpdkyoctjcddxshli469r.org/sunshine/Gjj3uVs_gsdVoeQR60mGdjXxcQ6-sxY5r_Wvt8yoJzrNMFBdnI0Lvs6_wAvyXBkacCVPsYSKOHvpeRGsi9fdqWug0q2iSN1NqCTBN4qsniDYkV6YzMXEOKnRuQzDcOc8lTrDGMlt4r_Y2SnqcqMTDy1MTEPxgoMlL6SbCVqQ-kxBBrlCbqz8IC5rvwLpUbniFbgCNCuQmSvHvvVJ5G0XxoLJcHKbdoyWrjCq9COb3dbmfwgbg9N_NDCT-4n3anX7ObZ8pOo16q-BjkpQrN_cxDMDEikNtRpAkgSG7nTB1Yk/hls/index.m3u8
+https://qmaalhy7acgxwhm.ngolpdkyoctjcddxshli469r.org/sunshine/9OfvgrmZrptJFZrtIvU8ETJYMm3i3TyuMXyP9Ult6UJq2XcWEdBa7iaumy4Y-ENmKaabcaBM1ZXOO4aLT0s7sqx58-vX7VHoygP5yE4o2_M6BbbhsiuzNaaGddf32TKadRJoszdOHtarj8CVKUti9oEnbcRPlzEzyTF_1_Dor56pN-xTQV4-TfBweqm-MxBGIWEP8UWvo7ORtgNimE3W68B9WLbAUcYiZ3qBS6Xrw658jVz65G8bHazFOwFg5YSt6TC3GMob1GiZzvfNbXCMZaNQ2yrZe79J5AxPokUnYdA/hls/index.m3u8
 #EXTINF:-1 tvg-id="beinsports1.tr" tvg-logo="https://raw.githubusercontent.com/kadirsener1/logolar/master/logos/bein1.png" group-title="Spor",beIN 1 HD
-https://shouurvki7jtfax.ngolpdkyoctjcddxshli469r.org/sunshine/Uds9zmUS-ZXRv3JDINsuqrFqYAoYCx2iHHOUjWrTYmQEqBnlPejvHHpKiEyqb1LmQF_BV69vwFknl1tevoigLsV1Xs4zby6Unu3T81_At7H3ePwaKYkZjm1k1-Zseifn5dcno0YxOAnoQAvYUSmkNi4-RmGoa4RWlxfSKh6ZgBKHiiqkCq0ZgNvA4h10vmPmC0FCfb7Oj_iKqGblt0HhrhXTqIW22uciAHHkgFUzH69eBAkVJNI-jZ1WyYhcQwN2h-y9K1fKSFQ-QRPZ8YGEfuxsW7CZpcm9UAZnRk3L5r0/hls/index.m3u8
+https://shouurvki7jtfax.ngolpdkyoctjcddxshli469r.org/sunshine/gfWzDnIZIgAguAkmsYJONEGxG7L-wEpyI28DHksjGoH58VyXw9ZUXAdfH7uuf6Vk-u4MMpTW6k8tYRjv5GhQ0ECvccFQBlMhs2Ozmhqn-H-8sVV5V21gc_pQVO3BFzeh1Fg5YXa37g6Je1ti_HwwrdDpXCxfG43eY7FzMYBtotvhQdpxIxHeHhMtZpgEhKO-oZXpvRPGwcT3_htsMVD4EuLyGXnLYbolMOVtt1-ePy1nsl64AgzMX2y0eDEW2qUZURrE3fOmTFP3bWTTUEzS7-xcAZnULSRHy32sqt4GbMQ/hls/index.m3u8
 #EXTINF:-1 tvg-id="beinsports2.tr" tvg-logo="https://raw.githubusercontent.com/kadirsener1/logolar/master/logos/bein2.png" group-title="Spor",beIN Sports 1 HD
-https://td3wb1bchdvsahp.ngolpdkyoctjcddxshli469r.org/sunshine/FXcy181SXn4VD-Jkrcm9svr41eiYwFwj5R1Fh8yX6Lijmq4z0mKZnzTuKzbe9VABkzY_bNaqI-Gy_d0Dxvix0xXYa2xK6KpSeGTstTDl6xyU6Jj8FjG-yAxW1u_mv8arW1a2KZ2uJs9GhGly-9tCzYxcISqqf8un_fHxXJcaHtFyGofZXRX5Wjnp9GOcVXGFCSoh4tSYjqHR4s_hsPSxmTJbOvitfYlZeOsEAZX5gF_tbkiJZUv3Iqr6ph7J7CC4XKreKIXOZUP_tS3ufS0MOc7hMysj76jeESygeTngQdg/hls/index.m3u8
+https://td3wb1bchdvsahp.ngolpdkyoctjcddxshli469r.org/sunshine/nFBWVnQOlWNFOn5TpdyOEHb5eOls8K3ImpJHEmsVjB-_pOr4HO0DLYgC9Z2sEF8Z8AjoR5Q_PLJpOUSei6sYZBQW1EEl6Ns1pyPpzqeCBOwzJIU7VQ6BBL_hLXt9xxRLM6lpRTKNwPWdiG419Xbwzq7UCZpqfxjqIKcXKmGdfcey35m4mexsSSHin399c2pkJg1heZsNYY1pUzt_BiuTr34EbZ6B0x_5nNLx2cFNt_fyOTFqWrHMkhJ2LLLHqkZTQqSTlv2UBBbOw0hSAQIvLrYc79qvfCSGf0yX45vLXJc/hls/index.m3u8
 #EXTINF:-1 tvg-id="beinsports2.tr" tvg-logo="https://raw.githubusercontent.com/kadirsener1/logolar/master/logos/bein2.png" group-title="Spor",beIN Sports 1 HD
-https://qmaalhy7acgxwhm.ngolpdkyoctjcddxshli469r.org/sunshine/iC81ckqpJ_iC7PFfggC6TyoNDCEWHQqGhEM8AesW9AjXF70esuZ_UvY8TQwp0q1HIMzoq0RqENKCgzQCsV8An3PQjmiNfEW-LApy9fL5vxteMfbCqNNyld8dWQ3cCTvaYNneKrkGWAAcI3HqN7Ze6Qa5nY0I_AChBUtXvHugql3BzZ6ULucv-USD1IsEq6yx3m2Jck3s3YHcud3pRL1pVA-0X9hom0PzZ64t2e3yCygSvy9yhWWI--vDBzm9jmmL548R39jpBwaGZw79s5rDGQ4HFA6gL-yA0T4sruTS7IE/hls/index.m3u8
+https://qmaalhy7acgxwhm.ngolpdkyoctjcddxshli469r.org/sunshine/n8EaMG7v3S1xX1eOYYwRzbxSQdRbPYUYMx26JuOqIlLHTo77sVSrjHnuN3ChjqKD8rYdVK-0xG5GVh2bXfgC-r-ywsI5XQlJafSvZUCU_nyxrXlnBi5TT4IXyVFjaRXCf2zRGJsMEakJfLXBy9QSQXP4IkwPZY1zXu76LF4dbvIEO4kdkP8V8pm1msmM4LV1fFoOFOSYEDg5MXDL8kICX1SkCtxoRShAa0tH3MexaEu3keyDXm3Vvr5-lWM_cteJZ-QFVu5qdRCv3wiN9Qch2whkHGAUgAqygKzuDrsUt4c/hls/index.m3u8
 #EXTINF:-1 tvg-id="beinsports2.tr" tvg-logo="https://raw.githubusercontent.com/kadirsener1/logolar/master/logos/bein2.png" group-title="Spor",beIN Sports 1 HD
-https://td3wb1bchdvsahp.ngolpdkyoctjcddxshli469r.org/sunshine/-4b-GGgYfgojgPDNG_RcEVEvRzIrDjKoh5mZPrYHG6rZCppeUk-F_3QlnYZY39Sgc8QDynOXk8msfTuILdF0Gi7yCU-H9QUTG97A2-2HEadLXAuwdgkSKzX_K_HiKgU79RpcowM22V812Zw4Mn3MdidumEMMT5BN1kIRtwSlWWmUPzJ0h0Qc7YpVaxmED1-82PPkXTqrBPCBFLZ9yA6tzxGUHsgbAQB2-K3fCYQyDBnitOeVLvk3tdjluanJB-9ek8iU3dnRhNP4YhxJK3MDMhiByySvzeR63joTYL_y_qI/hls/index.m3u8
+https://td3wb1bchdvsahp.ngolpdkyoctjcddxshli469r.org/sunshine/I8vZ0ch8BTqoFBaAwxRwMvNBTPvjoU44Ffu2lQlNXqpyStB0HJWsUcHN1aoPF8m9bOdc6HZW-PvAlCrMuWNZ6nQPdWVbG0nXx4jI87uQKhzSkcVI6K_seWVW1IQEcYZ331T2ATwzDj-XuTg7Vc9qIQpTgK3cnmicfKMuPIhPb-9e3R-lvxWV_sGOMdPPahLSdvL6z8DUFH8CMy5E68WgK2xyGy9qB4uFQJwn1JqJXbQGOt2_yYZhtQHUFD9YhAEcA4aZ5cAxRWtzI1YKY89wJOII0gSnOMpmMh_z52MHuCU/hls/index.m3u8
 #EXTINF:-1 tvg-id="beinsports2.tr" tvg-logo="https://raw.githubusercontent.com/kadirsener1/logolar/master/logos/bein2.png" group-title="Spor",beIN Sports 1 HD
-https://qmaalhy7acgxwhm.ngolpdkyoctjcddxshli469r.org/sunshine/GwsQbSaPnLw7qK8HVIEsd4UzHaQwdu1mS9rVumKz0ixNt2vkZuD9Uq_--EQ0oWZ26GpgeyfI0GRa1IbsNqCsq8v5NAGKa8ZwE9sVH4vnkYjyNlb47zU6NY4Cy3Pqq5HmphKaeYtI--CIUC6v1aBLfP97pHInZihvDqAC8d4C0PpckgzzNE4AGqAER7UjGSatrkQrsJ7mA5bzWR-cZFNZhREByrayhlfwbc-VxKk5nViYfwHsOXsch3dE6WXXea2Rh40_qDFRaloW3q4FcAfGadHLUmUkZ03ah94jl1B9PWY/hls/index.m3u8
+https://qmaalhy7acgxwhm.ngolpdkyoctjcddxshli469r.org/sunshine/mdWmnDzavc_1Bjp9qzXH52rzrkbDGRjLCgHvuo9HjiU8j8IJvtUVFne-dCZur5E2I8CDZX507-w3VBwzBxtpikIY8OPRBeuUtCYYVedlfMrsG-WCc2eVuAwH1XQtJj_RGyFHvgrbpsM27I37e7Wr5r_7Zv9ZYqcSzd6F9sQ76ImRWRM8V1oRApz406velrJgtQcFBipP4NlXZjsh7a4D4mR0iyQ6edznsYDfXL_x6-ar5TKPkkerIo-O7s9gjtlteWWJ3RoxaN19qqqSFMf4yHSwMDnsgX8Ijl5njKGeO_I/hls/index.m3u8
 #EXTINF:-1 tvg-id="trt1.tr" tvg-logo="https://raw.githubusercontent.com/kadirsener1/logolar/master/logos/trt1.png" group-title="Spor",beIN Sports 1 HD (yedek)
-https://qmaalhy7acgxwhm.ngolpdkyoctjcddxshli469r.org/sunshine/ML5kJZ0YLkwTtXgIrjaK5j1GDfeaWMU1A3MU_cqk1fLViboAE78wwbip4B-3L52kpqUKctsu1E4ved-TF1oNUWXksBvt8NTtqbkPjK_X5cEtarqXGgEChFkUMOHNGI8Nw0tikEDGfYgzdv5Yae5bC8QpbMh4rZXRBEFNXx4OMkw0Vw3XmsAEVUUwT5H0gMx89-t7M8mF1oP2rvWUr3GPJcD1UcqJD3DAr27BZ_ydqoPohApOlbY-WTIeWQCj-CGxIS4RvW16WB68caS7gPU_jTkMeDV7LT0Eq2-eOffDf7c/hls/index.m3u8
+https://qmaalhy7acgxwhm.ngolpdkyoctjcddxshli469r.org/sunshine/XkiNEpmMeWh3KuGwL9XqLqbvMy313Z79lpKg8Zk5upVP3E6xmQkud4uehMjm6i7eFK0zgyF3OlCyBB_7krDAeDl_fgYmaJBhI1gNfTzkO--9r0M4EwSZzLWkqfs3zEpnwONOjXAsLia67EjAKqN2qDWVddjYlxMLDSKq63ilICBJYbzpKIyQZyOsufpTdEKZJVohcnELY86tEH6lj57SC_gPdaxerLS4Y88GYJw0DqzAzAJP9xITkmwpuhSuEP9BTAzv2OUHJskfbfem_d-U7guQHYmvJ9qOEFt9ZqkuVCs/hls/index.m3u8
 #EXTINF:-1 tvg-id="trt1.tr" tvg-logo="https://raw.githubusercontent.com/kadirsener1/logolar/master/logos/trt1.png" group-title="Spor",beIN Sports 1 HD (yedek)
-https://td3wb1bchdvsahp.ngolpdkyoctjcddxshli469r.org/sunshine/gtW5vty5dCrRtFYbFnImjyerj9v8GxRE0b0UvCWaxfGpEH1fMaED4dP_EkYqkkJYhThYg_v9yTrekj578y1JfSx6RsAYq75BgKwh4qddhRSfJEircVh_oQFt2mPTv_-hAwcPqMJk29cOBmOR-tY4-gER2fjjbxlyqgxh-9sz-iHi46a3TeUqL7OR73uM1es6-eo8SM3Vc4EX1E8yqbzJBAvnKCfRGJ3jshZpbKDGPyLNam2SeSIDDhZi1gxP0DIaXxnbC0Owr9xEdueBWJuX65f3mWXcqTzzrmdBTFZkW68/hls/index.m3u8
+https://td3wb1bchdvsahp.ngolpdkyoctjcddxshli469r.org/sunshine/JiOaEZAEyGAZoJ1UmaWnS87RO1q-DoH02uGpBYGxZpcWBqbmyWyBDCsAWU2BWIqzAihbiE5D7RYfiYFEeFAqK-EeKYDQbGYvotzkgGE9OiZXaMWX_lU2AX0IAMsqQMDSxpzA_GEUQWw9amv1JkLVtYRUhv8xYjlQMLJiUxpBxj9SwSubkwGsI5K0v3MLN6ZRyEOLG7FEwZ6GBRCIRdwjkhafwz7godogQh2w1ZBpW24h2UswsYc-23OjrfgrBVQmIFM4sujc1Zaoo3Zg1PhjlbmeK8VWSpxfgocrwNk7w8U/hls/index.m3u8
 #EXTINF:-1 tvg-id="trt1.tr" tvg-logo="https://raw.githubusercontent.com/kadirsener1/logolar/master/logos/trt1.png" group-title="Spor",beIN Sports 1 HD (yedek)
-https://td3wb1bchdvsahp.ngolpdkyoctjcddxshli469r.org/sunshine/cTPZF06Ob-C-7lRSpjjcC_NMyAGcysSQuCKDnRRbkxoSNW_mDQfP4U-cYNLKaZltcnYp41SRU2sVNpbz710hlnWOjhSuESnmPWRsXlQgq4FMsUdIf-5vTExRYt8z-PBHc6uWWWeB3gFxbyQoU8z4rKsI8VDDbecTLR8xBofym9xM5IbbLrADX62VmszJXwIlUoaLJq6kdGXlsPpQDsJ8jDnhhX6vJCtm0FRVmcz2r27SJo3ZDRPHk1VQr61ijsjaOQ7tVCtIvZ-SRRRPmX5pcQ9AIDzoY0ufgTmC4olzebc/hls/index.m3u8
+https://td3wb1bchdvsahp.ngolpdkyoctjcddxshli469r.org/sunshine/6OysrOnrIDowfFiCW_q5ka3c6HHSJGOnoxOh3tOZSHPU93DWP5irP4_mj3ulG9V_G763OC3RmO5OoB9SyS7Y7HIU5qAFuKEWoRmjuFWtklH_nAUUdown7ZET7oplKxb-IpNk3XRlE6IL0G20_JqT8scuxaKb_QNclVnnCPPvWqwSUmYNLxrGo2ka5RjlKaObdH1V7MAx9n6ni5rXzhfh4tF7k-YHEEsnxaKV_oHQ5xGCF01WVIiR444dTApE3EyvP7oy7hz2KA-UJv5Mk4YzAD_5m14Fl-6u36qmHCMPfKw/hls/index.m3u8
 #EXTINF:-1 tvg-id="showtv.tr" tvg-logo="https://raw.githubusercontent.com/kadirsener1/logolar/master/logos/showtv.png" group-title="Spor",beIN Sports 1 HD (yedek 2(
-https://td3wb1bchdvsahp.ngolpdkyoctjcddxshli469r.org/sunshine/G-EOvZYab6AzUvT6ImJKTvtsF4TEDVTytjzZ3BQKkQ2smYWY06jin7H60yjQcpxwQDRVnjwirtpYfTOsRvix8NBBR9vJXifk73J8oegkcrbULEq17hT3VyXTt6JkPkX-OM2_TRSIgUUs_CRkgdmmBNClyATBCXQlTKy5BdFJZerfLQYbZG5i05hSlQOPwDPLDRSvGhrJSGxnbBXv9kUNaLhdHqH4L_nJ2L9aX6_nXsSRdydX4NxhMYwJLWZn2VmFBOL82i19FaZkfo80ZIX4U52-XaJEPZpe38VKJfnVxiQ/hls/index.m3u8
+https://td3wb1bchdvsahp.ngolpdkyoctjcddxshli469r.org/sunshine/QNmOw4kZpt5ijVTI6fNuKGCm3PMEwpL5kKrKX8TW9sUDo294TtVUUa01iUWhhnevhCe-cgRA1rU_MP2jEjNefpEOlBLsVB8oQgH91dzGqGuKImMKxMiTrPdCsJZcSFcULeKL2a3NsrqURrcwNKka77kXeXat23GasmJJm7CMOV4xVgPUa7O8GJHpUMeKvirn0tlzXYt8bjR8nRCQCVu0Mn3v2ULvt5KF_BbJJQIDPPnIC-VJhVY_WV2jeG1wgAQ0wTLMgkJNj7RQG2mWkt5XhJQEOrNG1bLMeaMuMx41VCI/hls/index.m3u8
 #EXTINF:-1 tvg-id="showtv.tr" tvg-logo="https://raw.githubusercontent.com/kadirsener1/logolar/master/logos/showtv.png" group-title="Spor",beIN Sports 1 HD (yedek 2(
-https://td3wb1bchdvsahp.ngolpdkyoctjcddxshli469r.org/sunshine/PZxQD8pPorM9iEy8-XUqNjEei5Ndgci5U30zFPIVV_Yc87HjYdrnJ5jS32OpGQw5GZJwO1FM9dhgsJgZstrhAVOj4cJZfbLJnQvNzbPVnKCGqY81FnAcTnkycU8WlvW2MZkIIhRXCChUp5-UP0ldSQOsuAwIuu1zmNOG7loyqGfv9O0CtxxjroKFJ9GAZCVhBWmnf9RPHvwGkyrWDzJPOXtnnmXRFp6sCyz-JV3eOTUiI8pR2tEgPzUSAqrUH7p_cUigdI7L3_CNgZp1UZ3bZgDf59oriD00BA-D1LN65CE/hls/index.m3u8
+https://qmaalhy7acgxwhm.ngolpdkyoctjcddxshli469r.org/sunshine/shLEBpVElasL8NZKpnga0aYzW37ZTrbIP1QGRQaaEQw7IwgaahxF4qHxOUyBNdE-0EYy7NP7d2qmuQwYMUy6nPuxifOMA3SQ99oL_R1SQWSPeiGdwwRtm_aSbQs8P1YFfxYj8wzGxPOv5lCKCbQdImwJfHyotrUeVygCVFX92pgZNIKTtRNw929BQW4edBC_fsunBDqsdQtgy1oieLEN5e46vqVEJBrGkMB_PdsF0FoNwGeOMnE7mjIQ9Z5R3F1bBhay8NdsbozCSG1Q9iGX2yk3erTKGT3LzaUlJHFKNQY/hls/index.m3u8
+#EXTINF:-1 tvg-id="showtv.tr" tvg-logo="https://raw.githubusercontent.com/kadirsener1/logolar/master/logos/showtv.png" group-title="Spor",beIN Sports 1 HD (yedek 2(
+https://td3wb1bchdvsahp.ngolpdkyoctjcddxshli469r.org/sunshine/DEL0VCRaprj571GroSwOV50hU5Fd8uWhpvffTC58uyq3_vfKiKZluHHmw_oM42YYIyor0QADcseCzQ8aLGwH2DC0uHcIi8bicvKXAT3iRUXUr_EO-3ZyzNlxr45lkCX_SwH122AkRL5DBknkxXpOC02DOvg2JAJBcUlPB_hOZqg_2VRcPyLjY28YwwLAI0K8nNU9U6kEdBq0oQWyofbDjWQN8u_sktR0CUzdz5srwKyeor2wfSFmtaaQYL7gMdHqEHdHYsfk8d1BfUSMubAd4Ee5DO28K0xor5ZM6oQU2mE/hls/index.m3u8
