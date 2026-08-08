@@ -21,7 +21,7 @@ CHANNELS = [
         "logo": "https://raw.githubusercontent.com/kadirsener1/logolar/master/logos/bein1.png",
         "tvg_id": "beinsports1.tr",
         "urls": [
-            "https://vavoo.to/vavoo-iptv/play/1363827223a1c98515d61"
+            "https://vavoo.to/play3/300113394.m3u8"
         ]
     },
        {
